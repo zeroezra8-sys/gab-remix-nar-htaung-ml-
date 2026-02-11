@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remix Web | GodGab</title>
+    <style>
+        /* တစ်ကိုယ်လုံးစာ Font နဲ့ Background Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); /* Gradient background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        /* Container ဗူးလေး */
+        .card {
+            background: rgba(255, 255, 255, 0.05); /* မှန်ကြည်ရောင် Box လေး */
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px); /* နောက်ခံကို ဝါးပေးတာ */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #0088cc, #00ffcc); /* စာသားကို gradient ရောင်ခြယ်မယ် */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Button ပိုလန်းအောင် လုပ်ထားတာ */
+        .btn-telegram {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
+        }
+
+        .btn-telegram:hover {
+            transform: translateY(-3px); /* အပေါ်ကို ကြွတက်လာမယ် */
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.5);
+            background: #00aaff;
+        }
+
+        .btn-telegram:active {
+            transform: translateY(-1px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>မင်္ဂလာပါ</h1>
+        <p>အရည်အသွေးမြင့် သီချင်းတွေ နားထောင်ဖို့ ကျွန်တော်တို့ရဲ့ Telegram Channel ကို လာခဲ့ပေးပါဦး။</p>
+        
+        <a href="https://telegram.dog/godgab01" target="_blank" class="btn-telegram">
+            Telegram သို့ သွားရန်
+        </a>
+    </div>
+
+</body>
+</html>
